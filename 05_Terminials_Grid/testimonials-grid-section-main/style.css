@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    background-color: hsl(210, 46%, 95%);
+    margin: 16px;
+}
+
+.main-container {
+    
+
+    /* margin-inline: 2rem; */
+    display: grid;
+    gap: 1.5rem;
+    padding-bottom: 3rem;
+    max-width: 1000px;
+    /* max-height: 500px; */
+    margin-inline: auto;
+   
+}
+
+.box {
+    padding: 1.5rem 2rem 2rem;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0.5rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  
+
+    /* min-height: 200px;
+    color: white;
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px; */
+
+}
+
+
+/* General font sizes and colors */
+h2 {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: hsl(0, 0%, 81%);
+}
+
+h3 {
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: hsl(0, 0%, 81%, 0.5);
+}
+.short-text{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color:  hsl(0, 0%, 100%);
+}
+.long-text{
+    color: hsl(0, 0%, 81%, 0.7);
+    line-height: 1.375rem;
+}
+.profile-image {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    border: 2px solid white;
+    position: absolute;
+}
+.name{
+    padding: 0px 0px 0px 50px;
+    
+   
+}
+.Graduate{
+    /* padding: 0px 0px 0px 50px; */
+    margin-left: 50px ;
+    margin-top: -14px;
+}
+
+
+
+
+
+
+.box-5 h2,
+.box-5 .short-text{
+    color: hsl(217, 19%, 35%);
+}
+.box-5 h3 {
+    color: hsl(217, 19%, 35%, 0.5);
+}
+.box-3 .short-text {
+    color: hsl(217, 19%, 35%, 0.7);
+}
+.box-3 h2{
+    color: hsl(217, 19%, 35%);;
+}
+
+
+
+.box-1 {
+    background-color: hsl(263, 55%, 52%);
+    position: relative;
+}
+.box-1 .short-text{
+    position: relative;
+    z-index: 1;
+}
+
+.box-2 {
+    background-color: hsl(217, 19%, 35%);
+}
+
+.box-3 {
+   background-color: white;
+}
+
+.box-4 {
+    background-color: hsl(219, 29%, 14%);
+}
+
+.box-5 {
+    background-color: white;
+}
+.box-4 .profile-image{
+    border: 2px solid hsl(263, 55%, 52%);
+}
+
+
+
+
+@media (min-width: 600px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .box {
+        min-height: 300px;
+    }
+
+    .box-1,
+    .box-5 {
+        grid-column-start: span 2;
+    }
+
+    .box-3 {
+        grid-row-start: span 2;
+    }
+}
+
+@media (min-width: 1000px) {
+    .container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
